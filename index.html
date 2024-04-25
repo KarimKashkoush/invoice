@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Cairo", sans-serif;
+        }
+
+        .container {
+            max-width: 90%;
+            margin-inline: auto;
+            padding-inline: 15px;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            padding-block: 15px;
+            margin-bottom: 25px;
+        }
+
+        .header-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            flex-direction: column;
+            row-gap: 15px;
+        }
+
+        .contact {
+            display: flex;
+            align-items: flex-start;
+            column-gap: 10px;
+            align-items: center;
+        }
+
+        .header-right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .date {
+            margin-bottom: 10px;
+        }
+
+        .date .container {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid #000;
+            border-radius: 15px;
+        }
+
+        .date .container p {
+            flex: 1;
+            text-align: center;
+        }
+
+        .date .container p:first-child {
+            border-right: 2px solid #000;
+        }
+
+        .buyer-details {
+            margin-bottom: 10px;
+        }
+
+        .buyer-details .container {
+            padding: 20px;
+            display: flex;
+            align-items: start;
+            justify-content: space-around;
+            border: 2px solid #000;
+            border-radius: 15px;
+            direction: rtl;
+        }
+
+        .buyer-details .container>section {
+            flex: 1;
+            text-align: center;
+            padding-inline: 5px;
+        }
+
+        .buyer-details .container>section:first-child {
+            border-left: 2px solid #000;
+        }
+
+
+        .device-details {
+            direction: rtl;
+        }
+
+        .device-details {
+            margin-bottom: 10px;
+        }
+
+        .device-details .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .device-details .container table,
+        .installment .container table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        .device-details .container table tr,
+        .installment .container table tr {
+            text-align: center;
+            padding: 15px 10px;
+            border-bottom: 1px solid #000;
+        }
+
+        .device-details .container table tr td,
+        .installment .container table tr td {
+            padding: 15px 10px;
+        }
+
+        .device-details .container table tr th,
+        .installment .container table tr th {
+            padding: 15px 10px;
+            color: #fff;
+        }
+
+        .device-details .container table tr:first-child,
+        .installment .container table tr:first-child {
+            background-color: #3492E0;
+        }
+
+        .device-details .container,
+        .installment .container {
+            text-align: center;
+        }
+
+        .installment {
+            margin-bottom: 10px;
+            direction: rtl;
+        }
+
+        .delivery .container {
+            padding: 20px 10px;
+            border: 2px solid #000;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <section class="header">
+        <section class="container">
+            <section class="header-left">
+                <section class="contact">
+                    <img width="25px"
+                        src="https://th.bing.com/th/id/R.96d49fa98516cfdae36a925ff0c30588?rik=6O0cEORyx30Ekg&pid=ImgRaw&r=0"
+                        alt="logo">
+                    <p>966 595 667 249</p>
+                </section>
+                <section class="contact">
+                    <img width="25px"
+                        src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-64.png" alt="logo">
+                    <p>7sabat-alarab</p>
+                </section>
+                <section class="contact">
+                    <img width="25px" src="https://th.bing.com/th/id/OIP.-ZirgQE5pr8e7htQWowJIgHaHa?rs=1&pid=ImgDetMai"
+                        alt="logo">
+                    <p>7sabat-alarab</p>
+                </section>
+            </section>
+
+            <section class="header-center">
+                <img src="https://arabcomputers.com.sa/wp-content/uploads/2022/04/AC-AAD-logo.png" alt="logo"
+                    width="200px">
+            </section>
+
+            <section class="header-right">
+                <p>info@arabcomputers.com</p>
+                <p>www.arabcomputers.com</p>
+                <p dir="rtl">السعوديه - الرياض</p>
+            </section>
+        </section>
+    </section>
+    <!-- End Header -->
+
+    <!-- Start Date -->
+    <section class="date">
+        <section class="container">
+            <p>2024-04-21</p>
+            <p>#609580</p>
+        </section>
+    </section>
+    <!-- End Date -->
+
+    <!-- Start Buyer details -->
+    <section class="buyer-details">
+        <section class="container">
+
+            <section class="name">
+                <section>
+                    <p>الاسم: <span>ذياد الحربي</span></p>
+                    <p>رقم الجوال: <span>531022756</span></p>
+                    <p>العنوان: <span>المدينة المنوره / الجرف طريق الجامعات</span></p>
+                </section>
+            </section>
+
+            <section class="thanks">
+                <p>عميلنا
+                    <br>
+                    شكرا لتسوقك من حاسبات العرب
+                    <br>
+                    تم انشاء طلبك بنجاح
+                </p>
+            </section>
+
+        </section>
+    </section>
+    <!-- End Buyer details -->
+
+    <!-- Start Device Details -->
+    <section class="device-details">
+        <section class="container">
+            <table>
+                <tr>
+                    <th>اسم الجهاز</th>
+                    <th>السعر</th>
+                    <th>العدد</th>
+                    <th>الاجمالي</th>
+                </tr>
+                <tr>
+                    <td>4999,ايفون 15 برو ماكس 265جيجابايت - تيتانيوم طبيعي</td>
+                    <td>4999 ر.س</td>
+                    <td>1</td>
+                    <td>4999 ر.س</td>
+                </tr>
+            </table>
+            <p>اجمالي سعر الجهاز : 4999 ر.س</p>
+            <p>نوع المعامله : اقساط</p>
+        </section>
+    </section>
+    <!-- End Device Details -->
+
+    <!-- Start Installment -->
+    <section class="installment">
+        <section class="container">
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>قيمة الدفعه</th>
+                    <th>مدة القسط</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>333 ر.س</td>
+                    <td>12 شهر</td>
+                </tr>
+            </table>
+            <p>دفعة اولى : 1000 ر.س</p>
+        </section>
+    </section>
+    <!-- End Installment -->
+
+    <!-- Start Delivery -->
+    <section class="delivery">
+        <section class="container">
+            <p>التوصيل من خلال شركه اراميكس خلال 24 ساعه من الدفعة</p>
+        </section>
+    </section>
+    <!-- End Delivery -->
+
+    <footer>
+        <p>حاسبات العرب الالكتروني</p>
+        <p>/www.7sbat-alarab.com</p>
+    </footer>
+</body>
+
+</html>
